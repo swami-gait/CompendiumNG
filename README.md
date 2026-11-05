@@ -1,5 +1,4 @@
 # CompendiumNG
-# [Project Name]
 
 A lightweight, modern Node.js web application for Issue-Based Information System (IBIS) dialogue mapping, reimagined and modernized from the legacy Compendium tool.
 
