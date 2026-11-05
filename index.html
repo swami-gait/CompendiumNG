@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CompendiumNG Web — A powerful IBIS knowledge mapping and dialogue mapping tool. Create rich concept maps, capture meeting discussions, and organize complex knowledge visually." />
+  <meta name="keywords" content="IBIS, dialogue mapping, concept mapping, knowledge management, mind mapping, CompendiumNG" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CompendiumNG Web" />
+  <meta property="og:description" content="Visual knowledge mapping and dialogue mapping in your browser" />
+  <meta property="og:type" content="website" />
+
+  <title>CompendiumNG Web</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpolygon points='30,2 58,18 58,42 30,58 2,42 2,18' fill='%23082f49' stroke='%230ea5e9' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%230ea5e9' font-size='30' font-weight='bold' font-family='sans-serif'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/styles/index.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Loading screen (visible until JS boots) -->
+    <div id="loading-screen">
+      <div class="loading-logo">
+        <svg viewBox="0 0 60 60" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,2 58,18 58,42 30,58 2,42 2,18" fill="#082f49" opacity="0.9" stroke="#0ea5e9" stroke-width="2"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#0ea5e9" font-size="22" font-weight="bold" font-family="Inter, sans-serif">C</text>
+        </svg>
+        <span>CompendiumNG Web</span>
+      </div>
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Initialising knowledge base…</p>
+    </div>
+
+    <!-- Project selection screen (hidden until needed) -->
+    <div id="project-screen" class="hidden"></div>
+
+    <!-- Main app shell (hidden until project loaded) -->
+    <div id="app-shell"></div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
