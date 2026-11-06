@@ -26,7 +26,7 @@ This project reconstructs and modernizes the application into a standalone Node.
 
 ### Installation & Run
 ```bash
-git clone [https://github.com/](https://github.com/swami-gait/CompendiumNG.git
+git clone [https://github.com/](https://github.com/swami-gait/CompendiumNG.git)
 cd CompendiumNG
 npm install
 npm start
